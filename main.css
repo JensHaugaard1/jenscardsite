@@ -1,14 +1,27 @@
 
-body {
+body, html {
+  position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
+    width : 100%; 
     overflow: hidden;
-    background: #040404;
+    background: #030303;
     color: white;
+    cursor: none;
  }
 
-.inner { 
+ #mouse-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: rgb(208,89,49);
+}
+
+.video { 
     display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +41,7 @@ body {
     font-weight: 400;
     font-style: normal;
     text-decoration: underline;
+    cursor: none;
   }
    
 
@@ -41,9 +55,10 @@ body {
     color: rgb(100, 100, 100);
     font-size: 1.5vh;
     font-family: "source-code-pro", monospace;
-font-weight: 300;
-font-style: normal;
+    font-weight: 300;
+    font-style: normal;
     text-decoration: underline;
+     cursor: none;
   }
 
   a {
@@ -55,7 +70,12 @@ font-style: normal;
   }
 
 
-a:hover {
-  color: rgb(115, 115, 115);
-}
+  a:hover {
+  color: rgb(208,89,49);
+  }
+
+  a:link {
+  cursor: none;
+  }
+
 
